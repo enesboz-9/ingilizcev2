@@ -123,7 +123,38 @@ elif section == "📚 Vocabulary":
                 cols[1].markdown(f'<span class="example-text">{w["example"]}</span>', unsafe_allow_html=True)
                 cols[2].markdown(f'<span class="meaning-text">{w["meaning"]}</span>', unsafe_allow_html=True)
                 cols[3].markdown(f'<span class="badge badge-{w["level"]}">{w["level"]}</span>', unsafe_allow_html=True)
+# ── OXFORD 3000 ──────────────────────────────────────────────────────────────
+elif section == "🎓 Oxford 3000":
+    st.markdown('<h2 class="section-title">🎓 Oxford 3000™ Core</h2>', unsafe_allow_html=True)
+    st.markdown('<p class="section-desc">The most important words to learn in English, filtered by CEFR levels.</p>', unsafe_allow_html=True)
 
+    ox_search = st.text_input("🔍 Search Oxford Core...", placeholder="Search word or meaning...", key="ox_search")
+
+    # Seviyelere göre grupla
+    for level in ["A1", "A2", "B1", "B2", "C1", "C2"]:
+        if level in level_filter and level in OXFORD_3000:
+            words = OXFORD_3000[level]
+            
+            # Arama filtresi
+            filtered = [w for w in words if not ox_search or 
+                        ox_search.lower() in w["word"].lower() or 
+                        ox_search.lower() in w["meaning"].lower()]
+            
+            if not filtered:
+                continue
+
+            with st.expander(f"**Level {level}** ({len(filtered)} words)", expanded=(level == "A1")):
+                cols = st.columns([2, 3, 2])
+                cols[0].markdown("**Word**")
+                cols[1].markdown("**Example Sentence**")
+                cols[2].markdown("**Meaning (TR)**")
+                st.markdown('<hr style="margin:4px 0 8px 0">', unsafe_allow_html=True)
+
+                for w in filtered:
+                    c = st.columns([2, 3, 2])
+                    c[0].markdown(f'<span class="word-text" style="color:#1D4ED8;">{w["word"]}</span>', unsafe_allow_html=True)
+                    c[1].markdown(f'<span class="example-text">{w["example"]}</span>', unsafe_allow_html=True)
+                    c[2].markdown(f'<span class="meaning-text">{w["meaning"]}</span>', unsafe_allow_html=True)
 # ── SENTENCE PATTERNS ─────────────────────────────────────────────────────────
 elif section == "🔤 Sentence Patterns":
     st.markdown('<h2 class="section-title">🔤 Sentence Patterns</h2>', unsafe_allow_html=True)
