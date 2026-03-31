@@ -316,7 +316,7 @@ OXFORD_SET_1 = {
     }
 
 
-
+{
     # vocabulary.py dosyasının en altına ekleyin:
 
 def merge_vocabularies(main_vocab, extra_vocab):
