@@ -117,7 +117,7 @@ VOCABULARY = {
             {"word": "savory", "meaning": "tuzlu/iştah açıcı", "example": "I prefer savory snacks to sweets."},
             {"word": "wholesome", "meaning": "sağlıklı/besleyici", "example": "The soup is very wholesome."}
         ]
-    }
+    },
     "😊 Emotions": {
         "A1": [
             {"word": "happy",      "meaning": "mutlu",     "example": "I am very happy today."},
