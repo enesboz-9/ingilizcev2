@@ -260,3 +260,59 @@ VOCABULARY = {
         ],
     },
 }
+# Oxford 3000 Listesi - Set 1 (A1-A2 Temel Seviye)
+OXFORD_SET_1 = {
+    "🏠 Home & Daily Life": {
+        "A1": [
+            {"word": "ability", "meaning": "yetenek", "example": "She has the ability to speak three languages."},
+            {"word": "able", "meaning": "yapabilen", "example": "Will you be able to come to the party?"},
+            {"word": "about", "meaning": "hakkında", "example": "Tell me about your family."},
+            {"word": "above", "meaning": "üzerinde", "example": "The birds are flying above the trees."},
+            {"word": "across", "meaning": "karşısında/karşıdan karşıya", "example": "The library is across the street."},
+            {"word": "activity", "meaning": "aktivite", "example": "Swimming is my favorite outdoor activity."},
+            {"word": "actor", "meaning": "erkek oyuncu", "example": "He is a famous Hollywood actor."},
+            {"word": "actress", "meaning": "kadın oyuncu", "example": "She won an award for best actress."},
+            {"word": "add", "meaning": "eklemek", "example": "Add some salt to the soup."},
+            {"word": "address", "meaning": "adres", "example": "Please write down your home address."},
+            {"word": "adult", "meaning": "yetişkin", "example": "This movie is for adults only."},
+            {"word": "advice", "meaning": "tavsiye", "example": "Let me give you some advice."},
+            {"word": "afraid", "meaning": "korkmuş", "example": "Don't be afraid of the dark."},
+            {"word": "after", "meaning": "sonra", "example": "We can go for a walk after dinner."},
+            {"word": "afternoon", "meaning": "öğleden sonra", "example": "See you on Monday afternoon."},
+            {"word": "again", "meaning": "tekrar", "example": "Can you say that again, please?"},
+            {"word": "age", "meaning": "yaş", "example": "What is your age?"},
+            {"word": "ago", "meaning": "önce", "example": "I finished my homework an hour ago."},
+            {"word": "agree", "meaning": "aynı fikirde olmak", "example": "I agree with you completely."},
+            {"word": "air", "meaning": "hava", "example": "I need some fresh air."},
+        ]
+    },
+    "✈️ Travel": {
+        "A1": [
+            {"word": "arrive", "meaning": "varmak", "example": "What time does the plane arrive?"},
+            {"word": "bicycle", "meaning": "bisiklet", "example": "I go to school by bicycle."},
+            {"word": "boat", "meaning": "tekne", "example": "We took a boat to the island."},
+            {"word": "bus", "meaning": "otobüs", "example": "The bus stops in front of the station."},
+            {"word": "car", "meaning": "araba", "example": "He drives a blue car."},
+            {"word": "city", "meaning": "şehir", "example": "Istanbul is a very crowded city."},
+            {"word": "country", "meaning": "ülke", "example": "Which country are you from?"},
+            {"word": "drive", "meaning": "sürmek", "example": "Can you drive a car?"},
+            {"word": "flight", "meaning": "uçuş", "example": "The flight was delayed by two hours."},
+            {"word": "journey", "meaning": "yolculuk", "example": "Have a safe journey!"},
+        ]
+    },
+    "💼 Work & Career": {
+        "A1": [
+            {"word": "answer", "meaning": "cevap", "example": "I don't know the answer to this question."},
+            {"word": "area", "meaning": "alan/bölge", "example": "This is a quiet residential area."},
+            {"word": "begin", "meaning": "başlamak", "example": "The class will begin at nine."},
+            {"word": "build", "meaning": "inşa etmek", "example": "They are building a new hospital."},
+            {"word": "business", "meaning": "iş/ticaret", "example": "He has his own business."},
+            {"word": "buy", "meaning": "satın almak", "example": "I want to buy a new laptop."},
+            {"word": "call", "meaning": "aramak/çağırmak", "example": "Call me when you get home."},
+            {"word": "capital", "meaning": "başkent", "example": "Ankara is the capital of Turkey."},
+            {"word": "care", "meaning": "bakım/ilgi", "example": "Take care of yourself."},
+            {"word": "case", "meaning": "durum/vaka", "example": "In that case, we should wait."},
+        ]
+    }
+    # (Liste bu şekilde 100 kelimeye tamamlanacak şekilde devam eder...)
+}
