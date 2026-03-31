@@ -2701,7 +2701,7 @@ OXFORD_3000 = {
         {"word": "zero", "meaning": "sıfır", "example": "Zero point."},
         {"word": "zone", "meaning": "bölge/alan", "example": "Time zone."},
         {"word": "zoo", "meaning": "hayvanat bahçesi", "example": "Visit the zoo."}
-    ]
+    
     ],
     
     "B1": [], "B2": [], "C1": [], "C2": []
