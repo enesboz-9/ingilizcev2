@@ -1,0 +1,253 @@
+/* ── Google Fonts ─────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+/* ── Root Variables ───────────────────────────────────────────── */
+:root {
+    --bg: #0f1117;
+    --surface: #1a1d27;
+    --surface2: #22263a;
+    --border: #2e3348;
+    --accent: #4f8ef7;
+    --accent2: #f7c94f;
+    --accent3: #4fd1a0;
+    --text: #e8eaf0;
+    --text-muted: #8892aa;
+    --radius: 12px;
+    --A1: #4fd1a0;
+    --A2: #4fc4d1;
+    --B1: #4f8ef7;
+    --B2: #a04ff7;
+    --C1: #f76a4f;
+    --C2: #f7c94f;
+}
+
+/* ── Global Reset ─────────────────────────────────────────────── */
+.stApp { background: var(--bg) !important; }
+section[data-testid="stSidebar"] { background: var(--surface) !important; border-right: 1px solid var(--border) !important; }
+.stMarkdown, .stText, p, span, label { color: var(--text) !important; font-family: 'DM Sans', sans-serif !important; }
+h1, h2, h3, h4 { font-family: 'Playfair Display', serif !important; color: var(--text) !important; }
+
+/* ── Hide Streamlit Branding ──────────────────────────────────── */
+#MainMenu, footer, header { visibility: hidden !important; }
+.stDeployButton { display: none !important; }
+
+/* ── Sidebar ──────────────────────────────────────────────────── */
+.sidebar-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: var(--text) !important;
+    line-height: 1.2;
+    padding: 12px 0;
+}
+.sidebar-logo span {
+    color: var(--accent) !important;
+    font-size: 1.1rem;
+    letter-spacing: 0.3em;
+}
+
+/* ── Radio Buttons (Nav) ──────────────────────────────────────── */
+div[data-testid="stRadio"] label {
+    color: var(--text-muted) !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+div[data-testid="stRadio"] label:hover { color: var(--text) !important; background: var(--surface2) !important; }
+div[data-testid="stRadio"] [aria-checked="true"] label { color: var(--accent) !important; }
+
+/* ── Hero ─────────────────────────────────────────────────────── */
+.hero-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 3.2rem !important;
+    font-weight: 900 !important;
+    line-height: 1.15 !important;
+    margin-bottom: 16px !important;
+    color: var(--text) !important;
+}
+.hero-title span { color: var(--accent) !important; }
+.hero-sub {
+    font-size: 1.1rem;
+    color: var(--text-muted) !important;
+    max-width: 600px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+}
+
+/* ── Stat Cards ───────────────────────────────────────────────── */
+.stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 20px;
+    text-align: center;
+    transition: border-color 0.2s;
+}
+.stat-card:hover { border-color: var(--accent); }
+.stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: var(--accent) !important;
+}
+.stat-label {
+    font-size: 0.8rem;
+    color: var(--text-muted) !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-top: 4px;
+}
+
+/* ── Feature Cards ────────────────────────────────────────────── */
+.feature-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+.feature-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+.feature-icon { font-size: 1.8rem; margin-bottom: 10px; }
+.feature-title {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--text) !important;
+    margin-bottom: 6px;
+}
+.feature-desc { font-size: 0.88rem; color: var(--text-muted) !important; line-height: 1.6; }
+
+/* ── Section Titles ───────────────────────────────────────────── */
+.section-title {
+    font-family: 'Playfair Display', serif !important;
+    font-size: 2rem !important;
+    color: var(--text) !important;
+    margin-bottom: 6px !important;
+}
+.section-desc { color: var(--text-muted) !important; margin-bottom: 24px !important; }
+
+/* ── Level Badges ─────────────────────────────────────────────── */
+.badge {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: 0.05em;
+    color: #0f1117 !important;
+}
+.badge-A1 { background: var(--A1); }
+.badge-A2 { background: var(--A2); }
+.badge-B1 { background: var(--B1); }
+.badge-B2 { background: var(--B2); }
+.badge-C1 { background: var(--C1); }
+.badge-C2 { background: var(--C2); }
+
+/* ── Word Table Text ──────────────────────────────────────────── */
+.word-text {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text) !important;
+    font-family: 'DM Sans', sans-serif;
+}
+.example-text {
+    font-size: 0.85rem;
+    color: var(--text-muted) !important;
+    font-style: italic;
+    line-height: 1.5;
+}
+.meaning-text {
+    font-size: 0.85rem;
+    color: var(--accent3) !important;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* ── Expanders ────────────────────────────────────────────────── */
+details, .streamlit-expanderHeader {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: var(--radius) !important;
+    margin-bottom: 8px !important;
+}
+.streamlit-expanderContent {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-top: none !important;
+}
+
+/* ── Pattern Cards ────────────────────────────────────────────── */
+.pattern-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    margin-bottom: 16px;
+}
+.pattern-header { display: flex; align-items: center; gap: 12px; margin-bottom: 8px; }
+.pattern-name { font-weight: 700; font-size: 1rem; color: var(--text) !important; font-family: 'DM Sans', sans-serif; }
+.pattern-formula {
+    font-size: 0.85rem;
+    color: var(--accent2) !important;
+    background: rgba(247,201,79,0.08);
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    font-family: 'DM Sans', sans-serif;
+}
+.pattern-ex { font-size: 0.88rem; color: var(--text-muted) !important; padding: 2px 0; }
+.pattern-note {
+    font-size: 0.82rem;
+    color: var(--accent3) !important;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid var(--border);
+}
+
+/* ── Expression Cards ─────────────────────────────────────────── */
+.expr-card {
+    background: var(--surface2);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent3);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    margin-bottom: 10px;
+}
+.idiom-card { border-left-color: var(--accent2) !important; }
+.expr-header { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.expr-phrase { font-weight: 700; font-size: 1rem; color: var(--text) !important; font-family: 'DM Sans', sans-serif; }
+.expr-phrase-sm { font-weight: 600; font-size: 0.9rem; color: var(--text) !important; }
+.expr-meaning { font-size: 0.85rem; color: var(--accent3) !important; margin-bottom: 4px; }
+.expr-example { font-size: 0.85rem; color: var(--text-muted) !important; font-style: italic; }
+
+/* ── Search Input ─────────────────────────────────────────────── */
+.stTextInput > div > div > input {
+    background: var(--surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 8px !important;
+    color: var(--text) !important;
+    font-family: 'DM Sans', sans-serif !important;
+}
+.stTextInput > div > div > input:focus { border-color: var(--accent) !important; }
+
+/* ── Tabs ─────────────────────────────────────────────────────── */
+.stTabs [role="tab"] {
+    color: var(--text-muted) !important;
+    font-family: 'DM Sans', sans-serif !important;
+    font-weight: 500;
+}
+.stTabs [aria-selected="true"] { color: var(--accent) !important; border-bottom-color: var(--accent) !important; }
+
+/* ── Multiselect ──────────────────────────────────────────────── */
+.stMultiSelect span { font-family: 'DM Sans', sans-serif !important; }
+.stMultiSelect [data-baseweb="tag"] { background: var(--accent) !important; }
+
+/* ── Divider ──────────────────────────────────────────────────── */
+hr { border-color: var(--border) !important; }
+
+/* ── Footer ───────────────────────────────────────────────────── */
+.footer { text-align: center; color: var(--text-muted) !important; font-size: 0.8rem; padding: 12px 0; font-family: 'DM Sans', sans-serif; }
