@@ -76,11 +76,14 @@ st.markdown("""
 
 # 3. Sidebar İçeriği
 with st.sidebar:
-    # HTML Logo
-    st.markdown('<div class="sidebar-logo">🇬🇧 English<br><span>MASTER</span></div>', unsafe_allow_html=True)
-    st.markdown("---")
-    
-    st.header("Control Center")
+    st.title("English Master")
+    st.write("---")
+    # Hiçbir HTML/Markdown div'i olmadan sadece Streamlit bileşeni:
+    section = st.selectbox(
+        "Navigate",
+        ["🏠 Home", "📚 Vocabulary", "🎓 Oxford 3000", "🔤 Sentence Patterns"]
+    )
+    st.write(f"Seçilen: {section}")
     
     # Navigasyon - label_visibility'yi geçici olarak kaldırıp dene
     section = st.radio(
