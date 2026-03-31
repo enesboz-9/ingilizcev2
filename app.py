@@ -21,12 +21,12 @@ with st.sidebar:
     st.markdown('<div class="sidebar-logo">🇬🇧 English<br><span>MASTER</span></div>', unsafe_allow_html=True)
     st.markdown("---")
 
-    section = st.radio(
-        "Navigate",
-        ["🏠 Home", "📚 Vocabulary", "🔤 Sentence Patterns", "🎨 Adjectives & More", "💬 Daily Expressions"],
-        label_visibility="collapsed"
-    )
-
+    
+section = st.radio(
+    "Navigate",
+    ["🏠 Home", "📚 Vocabulary", "🎓 Oxford 3000", "🔤 Sentence Patterns", "🎨 Adjectives & More", "💬 Daily Expressions"],
+    label_visibility="collapsed"
+)
     st.markdown("---")
     st.markdown("**Filter by Level**")
     level_filter = st.multiselect(
