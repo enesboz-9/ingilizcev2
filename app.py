@@ -8,12 +8,22 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    /* Üstteki beyaz bandı (header) tamamen kaldır, butonun önünü açar */
-    header {visibility: hidden;}
+    /* Sidebar kapalıyken sol üstte duran açma butonu */
+    [data-testid="stSidebarCollapseButton"] {
+        background-color: #FF4B4B !important; /* Butonu kırmızı yap ki görelim */
+        color: white !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        left: 10px !important;
+        top: 10px !important;
+        z-index: 999999 !important;
+    }
     
-    /* Ana içerik alanını biraz aşağı kaydır ki buton rahat nefes alsın */
-    .block-container {
-        padding-top: 2rem;
+    /* Hover (üzerine gelince) efekti */
+    [data-testid="stSidebarCollapseButton"]:hover {
+        background-color: #ff2b2b !important;
+        transform: scale(1.1);
     }
     </style>
     """, unsafe_allow_html=True)
