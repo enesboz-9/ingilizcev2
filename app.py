@@ -6,7 +6,31 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded"
 )
+st.markdown("""
+    <style>
+    /* 1. Sidebar açma butonunu en üst katmana getir ve görünür yap */
+    [data-testid="stSidebarCollapseButton"] {
+        z-index: 10000 !important;
+        background-color: #f0f2f6 !important; /* Hafif gri arka plan ki nerede olduğunu gör */
+        border: 1px solid #d1d1d1 !important;
+        top: 10px !important;
+        left: 10px !important;
+        display: flex !important;
+        visibility: visible !important;
+    }
 
+    /* 2. Eğer buton ana içeriğin altında kalıyorsa Header alanını temizle */
+    header[data-testid="stHeader"] {
+        z-index: 999 !important;
+        background: transparent !important;
+    }
+
+    /* 3. Sidebar'ın kendisini zorla görünür kıl */
+    section[data-testid="stSidebar"] {
+        z-index: 1000 !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
 # Load custom CSS
 with open("style.css") as f:
     st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
