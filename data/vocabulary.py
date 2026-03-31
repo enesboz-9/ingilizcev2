@@ -316,25 +316,4 @@ OXFORD_SET_1 = {
     }
 
 
-{
-    # vocabulary.py dosyasının en altına ekleyin:
 
-def merge_vocabularies(main_vocab, extra_vocab):
-    for category, levels in extra_vocab.items():
-        if category not in main_vocab:
-            main_vocab[category] = levels
-        else:
-            for level, words in levels.items():
-                if level not in main_vocab[category]:
-                    main_vocab[category][level] = words
-                else:
-                    # Aynı kelimenin tekrar etmesini önleyerek listeye ekle
-                    existing_words = [w["word"] for w in main_vocab[category][level]]
-                    for word_data in words:
-                        if word_data["word"] not in existing_words:
-                            main_vocab[category][level].append(word_data)
-
-# Oxford listesini ana sözlüğe dahil et
-merge_vocabularies(VOCABULARY, OXFORD_SET_1)
-    # (Liste bu şekilde 100 kelimeye tamamlanacak şekilde devam eder...)
-}
