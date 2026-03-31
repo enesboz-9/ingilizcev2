@@ -314,6 +314,6 @@ OXFORD_SET_1 = {
             {"word": "case", "meaning": "durum/vaka", "example": "In that case, we should wait."},
         ]
     }
-
+}
 
 
