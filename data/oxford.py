@@ -910,7 +910,7 @@ OXFORD_3000 = {
         {"word": "zero", "meaning": "sıfır", "example": "Below zero."},
         {"word": "zoo", "meaning": "hayvanat bahçesi", "example": "Go to the zoo."}
     ],
-    "A2": [
+  "A2": [
         # --- A-B HARFLERİ ---
         {"word": "ability", "meaning": "yetenek", "example": "Natural ability."},
         {"word": "able", "meaning": "yapabilen", "example": "Able to swim."},
@@ -1201,9 +1201,9 @@ OXFORD_3000 = {
         {"word": "full-time", "meaning": "tam zamanlı", "example": "Full-time job."},
         {"word": "furniture", "meaning": "mobilya", "example": "Living room furniture."},
         {"word": "further", "meaning": "daha ileri", "example": "Further info."}
-        
+    ],
     
-    ], "B1": [], "B2": [], "C1": [], "C2": []
+    "B1": [], "B2": [], "C1": [], "C2": []
 }
     ],
     "A2": [], "B1": [], "B2": [], "C1": [], "C2": []
