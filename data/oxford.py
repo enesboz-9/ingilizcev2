@@ -1,12 +1,61 @@
 # data/oxford.py
+
 OXFORD_3000 = {
     "A1": [
-        {"word": "ability", "meaning": "yetenek", "example": "She has the ability to swim."},
-        # ... verdiğim diğer A1 kelimeleri
+        {"word": "about", "meaning": "hakkında", "example": "What is the book about?"},
+        {"word": "above", "meaning": "üzerinde", "example": "The plane is flying above the clouds."},
+        {"word": "across", "meaning": "karşıdan karşıya", "example": "The shop is across the street."},
+        {"word": "action", "meaning": "eylem", "example": "We need to take action now."},
+        {"word": "activity", "meaning": "aktivite", "example": "What is your favorite activity?"},
+        {"word": "actor", "meaning": "erkek oyuncu", "example": "He is a famous Hollywood actor."},
+        {"word": "add", "meaning": "eklemek", "example": "Add some salt to the soup."},
+        {"word": "address", "meaning": "adres", "example": "What is your email address?"},
+        {"word": "adult", "meaning": "yetişkin", "example": "This movie is for adults only."},
+        {"word": "advice", "meaning": "tavsiye", "example": "Can you give me some advice?"},
+        {"word": "afraid", "meaning": "korkmuş", "example": "Are you afraid of spiders?"},
+        {"word": "after", "meaning": "sonra", "example": "I will call you after lunch."},
+        {"word": "afternoon", "meaning": "öğleden sonra", "example": "See you this afternoon."},
+        {"word": "again", "meaning": "tekrar", "example": "Can you say that again?"},
+        {"word": "age", "meaning": "yaş", "example": "What is your age?"},
+        {"word": "ago", "meaning": "önce", "example": "I finished my homework an hour ago."},
+        {"word": "agree", "meaning": "aynı fikirde olmak", "example": "I agree with your opinion."},
+        {"word": "air", "meaning": "hava", "example": "I need some fresh air."},
+        {"word": "all", "meaning": "hepsi", "example": "All the students are here."},
+        {"word": "almost", "meaning": "neredeyse", "example": "Dinner is almost ready."},
+        {"word": "alone", "meaning": "yalnız", "example": "I don't like being alone."},
+        {"word": "along", "meaning": "boyunca", "example": "We walked along the river."},
+        {"word": "already", "meaning": "zaten/çoktan", "example": "I have already finished my meal."},
+        {"word": "also", "meaning": "ayrıca/da", "example": "She is a doctor and also a writer."},
+        {"word": "always", "meaning": "her zaman", "example": "He is always on time."},
+        {"word": "amazing", "meaning": "şaşırtıcı/harika", "example": "The view from the top is amazing."},
+        {"word": "amount", "meaning": "miktar", "example": "A large amount of money."},
+        {"word": "angry", "meaning": "kızgın", "example": "Why are you so angry?"},
+        {"word": "animal", "meaning": "hayvan", "example": "What is your favorite animal?"},
+        {"word": "another", "meaning": "başka/diğer", "example": "Would you like another cup of tea?"},
+        {"word": "answer", "meaning": "cevap", "example": "I don't know the answer."},
+        {"word": "any", "meaning": "hiç/herhangi", "example": "Do you have any questions?"},
+        {"word": "anyone", "meaning": "herhangi biri", "example": "Does anyone know where he is?"},
+        {"word": "anything", "meaning": "herhangi bir şey", "example": "I don't want anything to eat."},
+        {"word": "apartment", "meaning": "daire", "example": "I live in a small apartment."},
+        {"word": "apple", "meaning": "elma", "example": "An apple a day keeps the doctor away."},
+        {"word": "area", "meaning": "alan/bölge", "example": "This is a quiet area."},
+        {"word": "arm", "meaning": "kol", "example": "He broke his arm while playing football."},
+        {"word": "around", "meaning": "etrafında/civarda", "example": "Let's walk around the park."},
+        {"word": "arrive", "meaning": "varmak", "example": "What time does the train arrive?"},
+        {"word": "art", "meaning": "sanat", "example": "She is interested in modern art."},
+        {"word": "article", "meaning": "makale", "example": "I read an interesting article yesterday."},
+        {"word": "artist", "meaning": "sanatçı", "example": "He is a very talented artist."},
+        {"word": "as", "meaning": "olarak/gibi", "example": "He works as a teacher."},
+        {"word": "ask", "meaning": "sormak", "example": "Can I ask you a question?"},
+        {"word": "at", "meaning": "de/da", "example": "I'll see you at the station."},
+        {"word": "aunt", "meaning": "hala/teyze", "example": "My aunt lives in London."},
+        {"word": "autumn", "meaning": "sonbahar", "example": "The leaves fall in autumn."},
+        {"word": "away", "meaning": "uzak", "example": "Go away!"},
+        {"word": "baby", "meaning": "bebek", "example": "The baby is sleeping."}
     ],
-    "B2": [
-        {"word": "abandon", "meaning": "terk etmek", "example": "The company abandoned the project."},
-        # ... B2 kelimeleri
-    ],
-    # C1, C2 vb. devam eder...
+    "A2": [], # Şimdilik boş bırakabilirsin
+    "B1": [],
+    "B2": [],
+    "C1": [],
+    "C2": []
 }
