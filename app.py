@@ -31,7 +31,11 @@ from data.phrases import PHRASAL_VERBS, IDIOMS, DAILY_EXPRESSIONS
 with st.sidebar:
     st.markdown('<div class="sidebar-logo">🇬🇧 English<br><span>MASTER</span></div>', unsafe_allow_html=True)
     st.markdown("---")
-
+# main.py içindeki yapı şu şekilde olmalı:
+with st.sidebar:
+    st.header("English Master Control")
+    st.write("Menü Aktif") # Bu satırı mutlaka ekle, butonun oluşmasını tetikler.
+    # ... diğer kodların (A1/A2 seçimleri vs.)
     # Bu kısım içeride olmalı (4 boşluk veya 1 Tab)
     section = st.radio(
         "Navigate",
