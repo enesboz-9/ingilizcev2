@@ -43,9 +43,10 @@ if section == "🏠 Home":
 
     st.markdown("---")
     col1, col2, col3, col4 = st.columns(4)
-    with col1:
-        total_words = sum(len(v) for cat in VOCABULARY.values() for v in cat.values())
-        st.markdown(f'<div class="stat-card"><div class="stat-num">{total_words}+</div><div class="stat-label">Vocabulary Words</div></div>', unsafe_allow_html=True)
+   with col1:
+    oxford_count = sum(len(words) for words in OXFORD_3000.values())
+    total_words = sum(len(v) for cat in VOCABULARY.values() for v in cat.values()) + oxford_count
+    st.markdown(f'<div class="stat-card"><div class="stat-num">{total_words}+</div><div class="stat-label">Total Words</div></div>', unsafe_allow_html=True)
     with col2:
         total_patterns = sum(len(v) for v in SENTENCE_PATTERNS.values())
         st.markdown(f'<div class="stat-card"><div class="stat-num">{total_patterns}+</div><div class="stat-label">Sentence Patterns</div></div>', unsafe_allow_html=True)
