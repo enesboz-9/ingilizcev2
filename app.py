@@ -38,22 +38,28 @@ with st.sidebar:
         label_visibility="collapsed"
     )
 # ── HOME ─────────────────────────────────────────────────────────────────────
+# ── HOME ─────────────────────────────────────────────────────────────────────
 if section == "🏠 Home":
     st.markdown('<h1 class="hero-title">Master English.<br><span>From Zero to Fluent.</span></h1>', unsafe_allow_html=True)
     st.markdown('<p class="hero-sub">Your complete reference guide — vocabulary, grammar patterns, adjectives, verbs, adverbs, idioms and more. All levels. All in one place.</p>', unsafe_allow_html=True)
 
     st.markdown("---")
     col1, col2, col3, col4 = st.columns(4)
-   with col1:
-    oxford_count = sum(len(words) for words in OXFORD_3000.values())
-    total_words = sum(len(v) for cat in VOCABULARY.values() for v in cat.values()) + oxford_count
-    st.markdown(f'<div class="stat-card"><div class="stat-num">{total_words}+</div><div class="stat-label">Total Words</div></div>', unsafe_allow_html=True)
+    
+    with col1:
+        # Bu satırlar artık doğru şekilde içeride (indent edilmiş)
+        oxford_count = sum(len(words) for words in OXFORD_3000.values())
+        total_words = sum(len(v) for cat in VOCABULARY.values() for v in cat.values()) + oxford_count
+        st.markdown(f'<div class="stat-card"><div class="stat-num">{total_words}+</div><div class="stat-label">Total Words</div></div>', unsafe_allow_html=True)
+    
     with col2:
         total_patterns = sum(len(v) for v in SENTENCE_PATTERNS.values())
         st.markdown(f'<div class="stat-card"><div class="stat-num">{total_patterns}+</div><div class="stat-label">Sentence Patterns</div></div>', unsafe_allow_html=True)
+    
     with col3:
         total_adj = len(ADJECTIVES) + len(VERBS) + len(ADVERBS)
         st.markdown(f'<div class="stat-card"><div class="stat-num">{total_adj}+</div><div class="stat-label">Adjectives, Verbs & Adverbs</div></div>', unsafe_allow_html=True)
+    
     with col4:
         total_expr = len(PHRASAL_VERBS) + len(IDIOMS) + len(DAILY_EXPRESSIONS)
         st.markdown(f'<div class="stat-card"><div class="stat-num">{total_expr}+</div><div class="stat-label">Expressions & Idioms</div></div>', unsafe_allow_html=True)
@@ -61,6 +67,7 @@ if section == "🏠 Home":
     st.markdown("---")
     st.markdown("### 📖 What's Inside?")
     col1, col2 = st.columns(2)
+    
     with col1:
         st.markdown("""
         <div class="feature-card">
@@ -76,6 +83,7 @@ if section == "🏠 Home":
             <div class="feature-desc">Essential grammar structures with real examples. Learn how native speakers actually build sentences.</div>
         </div>
         """, unsafe_allow_html=True)
+        
     with col2:
         st.markdown("""
         <div class="feature-card">
