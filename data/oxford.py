@@ -1200,7 +1200,7 @@ OXFORD_3000 = {
         {"word": "fuel", "meaning": "yakıt", "example": "Gas fuel."},
         {"word": "full-time", "meaning": "tam zamanlı", "example": "Full-time job."},
         {"word": "furniture", "meaning": "mobilya", "example": "Living room furniture."},
-        {"word": "further", "meaning": "daha ileri", "example": "Further info."},
+        {"word": "further", "meaning": "daha ileri", "example": "Further info."}
         
     
     ], "B1": [], "B2": [], "C1": [], "C2": []
