@@ -8,22 +8,21 @@ st.set_page_config(
 )
 st.markdown("""
     <style>
-    /* Sidebar kapalıyken sol üstte duran açma butonu */
-    [data-testid="stSidebarCollapseButton"] {
-        background-color: #FF4B4B !important; /* Butonu kırmızı yap ki görelim */
-        color: white !important;
-        border-radius: 50% !important;
-        width: 40px !important;
-        height: 40px !important;
-        left: 10px !important;
-        top: 10px !important;
-        z-index: 999999 !important;
+    /* 1. Header'ı tamamen yok et (Bazen butonu o kapatır) */
+    header[data-testid="stHeader"] {
+        display: none !important;
     }
-    
-    /* Hover (üzerine gelince) efekti */
-    [data-testid="stSidebarCollapseButton"]:hover {
-        background-color: #ff2b2b !important;
-        transform: scale(1.1);
+
+    /* 2. Sidebar açma butonunu (Ok) ekranın ortasına yakın bir yere çek (Test için) */
+    /* Eğer buton gelirse yerini sonra düzeltiriz */
+    [data-testid="stSidebarCollapseButton"] {
+        visibility: visible !important;
+        display: block !important;
+        position: fixed !important;
+        top: 20px !important;
+        left: 20px !important;
+        background-color: red !important; /* Kırmızı yaparak fark et */
+        z-index: 999999 !important;
     }
     </style>
     """, unsafe_allow_html=True)
