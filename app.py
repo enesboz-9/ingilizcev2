@@ -17,16 +17,18 @@ from data.adjectives import ADJECTIVES, VERBS, ADVERBS
 from data.phrases import PHRASAL_VERBS, IDIOMS, DAILY_EXPRESSIONS
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
+# ── Sidebar ──────────────────────────────────────────────────────────────────
 with st.sidebar:
     st.markdown('<div class="sidebar-logo">🇬🇧 English<br><span>MASTER</span></div>', unsafe_allow_html=True)
     st.markdown("---")
 
-    
-section = st.radio(
-    "Navigate",
-    ["🏠 Home", "📚 Vocabulary", "🎓 Oxford 3000", "🔤 Sentence Patterns", "🎨 Adjectives & More", "💬 Daily Expressions"],
-    label_visibility="collapsed"
-)
+    # Bu kısım içeride olmalı (4 boşluk veya 1 Tab)
+    section = st.radio(
+        "Navigate",
+        ["🏠 Home", "📚 Vocabulary", "🎓 Oxford 3000", "🔤 Sentence Patterns", "🎨 Adjectives & More", "💬 Daily Expressions"],
+        label_visibility="collapsed"
+    )
+
     st.markdown("---")
     st.markdown("**Filter by Level**")
     level_filter = st.multiselect(
@@ -35,7 +37,6 @@ section = st.radio(
         default=["A1", "A2", "B1", "B2", "C1", "C2"],
         label_visibility="collapsed"
     )
-
 # ── HOME ─────────────────────────────────────────────────────────────────────
 if section == "🏠 Home":
     st.markdown('<h1 class="hero-title">Master English.<br><span>From Zero to Fluent.</span></h1>', unsafe_allow_html=True)
