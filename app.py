@@ -38,29 +38,66 @@ from data.phrases import PHRASAL_VERBS, IDIOMS, DAILY_EXPRESSIONS
 
 # ── Sidebar ──────────────────────────────────────────────────────────────────
 # ── Sidebar ──────────────────────────────────────────────────────────────────
+import streamlit as st
+
+# 1. Sayfa ayarı en başta olmalı
+st.set_page_config(
+    page_title="English Master",
+    page_icon="🇬🇧",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
+# 2. Sidebar Butonunu ve İçeriği Kurtaran CSS
+st.markdown("""
+    <style>
+    /* Sidebar logosu için güvenli stil */
+    .sidebar-logo {
+        text-align: center;
+        font-weight: bold;
+        font-size: 22px;
+        color: #FF4B4B;
+        padding-bottom: 10px;
+    }
+    .sidebar-logo span {
+        font-size: 14px;
+        color: #555;
+    }
+    
+    /* Sidebar açma butonunu (Ok işareti) zorla görünür ve tıklanabilir yap */
+    [data-testid="stSidebarCollapseButton"] {
+        z-index: 999999 !important;
+        background-color: #FF4B4B !important;
+        color: white !important;
+        border-radius: 5px !important;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+# 3. Sidebar İçeriği
 with st.sidebar:
+    # HTML Logo
     st.markdown('<div class="sidebar-logo">🇬🇧 English<br><span>MASTER</span></div>', unsafe_allow_html=True)
     st.markdown("---")
-# main.py içindeki yapı şu şekilde olmalı:
-with st.sidebar:
-    st.header("English Master Control")
-    st.write("Menü Aktif") # Bu satırı mutlaka ekle, butonun oluşmasını tetikler.
-    # ... diğer kodların (A1/A2 seçimleri vs.)
-    # Bu kısım içeride olmalı (4 boşluk veya 1 Tab)
+    
+    st.header("Control Center")
+    
+    # Navigasyon - label_visibility'yi geçici olarak kaldırıp dene
     section = st.radio(
         "Navigate",
         ["🏠 Home", "📚 Vocabulary", "🎓 Oxford 3000", "🔤 Sentence Patterns", "🎨 Adjectives & More", "💬 Daily Expressions"],
-        label_visibility="collapsed"
+        key="nav_radio"
     )
 
     st.markdown("---")
     st.markdown("**Filter by Level**")
     level_filter = st.multiselect(
-        "Select levels",
+        "Levels",
         ["A1", "A2", "B1", "B2", "C1", "C2"],
-        default=["A1", "A2", "B1", "B2", "C1", "C2"],
-        label_visibility="collapsed"
+        default=["A1", "A2"] # Hepsini seçmek yerine A1-A2 ile başla
     )
+    
+    st.write(f"Aktif Bölüm: {section}") # Sidebar'ın yaşadığını kanıtlar
 # ── HOME ─────────────────────────────────────────────────────────────────────
 # ── HOME ─────────────────────────────────────────────────────────────────────
 if section == "🏠 Home":
