@@ -105,7 +105,7 @@ VOCABULARY = {
             {"word": "vinegar", "meaning": "sirke", "example": "Put some vinegar in the salad."},
             {"word": "wheat", "meaning": "buğday", "example": "Wheat is grown in this area."}
         ],
-        "C1-C2": [
+        "C1": [
             {"word": "artisan", "meaning": "zanaatkar (el yapımı)", "example": "We bought artisan bread."},
             {"word": "confectionery", "meaning": "şekerleme/pastane", "example": "The shop sells confectionery."},
             {"word": "delicacy", "meaning": "nadir lezzet", "example": "Caviar is a delicacy."},
