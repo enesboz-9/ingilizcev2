@@ -929,4 +929,4 @@ VOCABULARY = {
             {"word": "legacy", "meaning": "miras/bırakılan iz", "example": "Enduring legacy."}
         ]
     }
-
+}
