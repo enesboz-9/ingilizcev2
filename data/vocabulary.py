@@ -232,67 +232,8 @@ VOCABULARY = {
             {"word": "stoical", "meaning": "metanetli", "example": "He was stoical in the face of pain."}
         ]
     },
-    "🏥 Health": {
-        "A1": [
-            {"word": "sick",       "meaning": "hasta",     "example": "I feel sick today."},
-            {"word": "doctor",     "meaning": "doktor",    "example": "I need to see a doctor."},
-            {"word": "medicine",   "meaning": "ilaç",      "example": "Take your medicine on time."},
-            {"word": "pain",       "meaning": "ağrı",      "example": "I have pain in my back."},
-        ],
-        "A2": [
-            {"word": "headache",   "meaning": "baş ağrısı","example": "I have a terrible headache."},
-            {"word": "fever",      "meaning": "ateş",      "example": "She has a high fever."},
-            {"word": "hospital",   "meaning": "hastane",   "example": "He was taken to the hospital."},
-            {"word": "exercise",   "meaning": "egzersiz",  "example": "Daily exercise keeps you healthy."},
-        ],
-        "B1": [
-            {"word": "symptom",    "meaning": "belirti",   "example": "What are your symptoms?"},
-            {"word": "prescription","meaning": "reçete",   "example": "You need a prescription for this."},
-            {"word": "allergic",   "meaning": "alerjik",   "example": "I'm allergic to peanuts."},
-        ],
-        "B2": [
-            {"word": "diagnosis",  "meaning": "teşhis",    "example": "The diagnosis was diabetes."},
-            {"word": "chronic",    "meaning": "kronik",    "example": "She has a chronic back problem."},
-            {"word": "immunity",   "meaning": "bağışıklık","example": "Build your immunity naturally."},
-        ],
-        "C1": [
-            {"word": "inflammation","meaning": "iltihaplanma","example": "The inflammation caused severe pain."},
-            {"word": "prognosis",  "meaning": "prognoz",   "example": "The prognosis is positive."},
-        ],
-        "C2": [
-            {"word": "pathogen",   "meaning": "patojen",   "example": "The pathogen spread rapidly."},
-        ],
-    },
-    "💻 Technology": {
-        "A1": [
-            {"word": "phone",      "meaning": "telefon",   "example": "My phone is out of battery."},
-            {"word": "computer",   "meaning": "bilgisayar","example": "I use a computer at work."},
-            {"word": "internet",   "meaning": "internet",  "example": "The internet is slow today."},
-        ],
-        "A2": [
-            {"word": "password",   "meaning": "şifre",     "example": "Don't share your password."},
-            {"word": "download",   "meaning": "indirmek",  "example": "Download the app for free."},
-            {"word": "upload",     "meaning": "yüklemek",  "example": "Upload your photo here."},
-            {"word": "screen",     "meaning": "ekran",     "example": "My screen is broken."},
-        ],
-        "B1": [
-            {"word": "software",   "meaning": "yazılım",   "example": "Install the latest software update."},
-            {"word": "database",   "meaning": "veritabanı","example": "The database stores all user data."},
-            {"word": "cloud",      "meaning": "bulut",     "example": "Save your files in the cloud."},
-        ],
-        "B2": [
-            {"word": "algorithm",  "meaning": "algoritma", "example": "The algorithm sorts data quickly."},
-            {"word": "encryption", "meaning": "şifreleme", "example": "Encryption protects your data."},
-            {"word": "bandwidth",  "meaning": "bant genişliği","example": "We need more bandwidth."},
-        ],
-        "C1": [
-            {"word": "machine learning","meaning": "makine öğrenmesi","example": "Machine learning powers recommendation engines."},
-            {"word": "cybersecurity","meaning": "siber güvenlik","example": "Cybersecurity is a growing field."},
-        ],
-        "C2": [
-            {"word": "quantum computing","meaning": "kuantum bilişim","example": "Quantum computing will change cryptography."},
-        ],
-    },
+    
+    
     "🌿 Nature & Environment": {
         "A1": [
             {"word": "tree",       "meaning": "ağaç",      "example": "There is a big tree in the garden."},
